@@ -79,3 +79,30 @@ pub fn eat_at_restaurant() {
     let order1 = back_of_house::Appetizer::Soup;
     let order2 = back_of_house::Appetizer::Salad;
 }
+
+// Example use alias
+// mod front_of_house {
+//     pub mod hosting {
+//         pub fn add_to_waitlist() {}
+//     }
+// }
+
+// use crate::front_of_house::hosting;
+
+// pub fn eat_at_restaurant() {
+//     hosting::add_to_waitlist();
+//     hosting::add_to_waitlist();
+//     hosting::add_to_waitlist();
+// }
+
+// Exapmle of `as` assign
+// use std::fmt::Result;
+// use std::io::Result as IoResult;
+
+// fn function1() -> Result {
+//     // --snip--
+// }
+
+// fn function2() -> IoResult<()> {
+//     // --snip--
+// }
